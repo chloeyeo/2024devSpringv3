@@ -19,6 +19,6 @@ jobs:
             cd /home/2024devSpringv3
             git config --global --add safe.directory /home/2024devSpringv3
             sudo git pull origin main
-            sudo ./gradlew bootWar
+            sudo ./gradlew clean build
             sudo fuser -l -n tcp 8080
-            nohup java -jar build/libs/*SNAPSHOT.war & cd
+            nohup java -jar build/libs/*SNAPSHOT.war &
