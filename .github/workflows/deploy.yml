@@ -22,4 +22,3 @@ jobs:
             sudo ./gradlew bootWar
             sudo fuser -l -n tcp 8080
             nohup java -jar build/libs/*SNAPSHOT.war &
-            sudo lsof -i:8080
